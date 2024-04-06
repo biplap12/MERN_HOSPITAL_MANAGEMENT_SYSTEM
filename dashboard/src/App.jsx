@@ -12,6 +12,7 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import { Context } from './main';
+import './App.css'
 
 const App = () => {
 
@@ -54,10 +55,11 @@ const App = () => {
         <Route path="/doctors" element={<Doctors />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      <ToastContainer 
+      <ToastContainer
         position="top-right"
-        autoClose={2000}
+        autoClose={1000}
         />
+       
     </Router>
     
     </>
