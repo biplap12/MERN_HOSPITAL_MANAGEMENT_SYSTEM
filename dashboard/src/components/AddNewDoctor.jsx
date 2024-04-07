@@ -37,6 +37,7 @@ const AddNewDoctor = () => {
       toast.success("Avatar Uploaded Successfully");
     };
   };
+  
 
   const handleAddNewDoctor = async (e) => {
     e.preventDefault();
@@ -56,9 +57,10 @@ const AddNewDoctor = () => {
           withCredentials: true,
           headers: { "Content-Type": "multipart/form-data" },
         })
+
         .then((res) => {
-          toast.success(res.data.message);
           setIsAuthenticated(true);
+          toast.success(res.data.message);
           setFirstName("");
           setLastName("");
           setEmail("");
@@ -69,8 +71,7 @@ const AddNewDoctor = () => {
           setDoctorDepartment("");
           setDocAvatar("");
           setDocAvatarPreview("");
-
-
+          
         });
     } catch (error) {
       toast.error(error.response.data.message);
@@ -83,7 +84,7 @@ const AddNewDoctor = () => {
   return (
     <section className="page">
       <section className="container add-doctor-form">
-        <img src="/logo.png" alt="logo" className="logo"/>
+        <img src="/logo1.png" alt="logo" className="logo" width="30%"/>
         <h1 className="form-title">REGISTER A NEW DOCTOR</h1>
         <form onSubmit={handleAddNewDoctor}>
           <div className="first-wrapper">
@@ -121,8 +122,8 @@ const AddNewDoctor = () => {
                 placeholder="Mobile Number"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                min={10}
-                max={10}
+                minLength={10}
+                maxLength={10}
               />
              
               <input

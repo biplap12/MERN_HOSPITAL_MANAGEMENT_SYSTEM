@@ -555,6 +555,16 @@ nav svg {
     margin-top: 20px;
   }
 }
+@media (max-width: 1100px) {
+  nav .showmenu {
+    width: 100vw;
+  }
+  .container .logo a img{
+    width: 15%;
+
+  }
+}
+
 @media (max-width: 800px) {
   nav .showmenu {
     width: 96vw;
@@ -574,6 +584,10 @@ nav svg {
   nav .navLinks {
     background: #fff;
     width: 100%;
+  }
+  .container .logo a img{
+    width: 20%;
+
   }
 }
 

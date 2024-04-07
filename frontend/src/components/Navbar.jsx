@@ -29,9 +29,11 @@ const Navbar = () => {
   return (
     <nav className="container">
         <div className="logo">
-            BN Medical
+            <Link to="/">
+                <img src="/logo1.png" alt="logo" width="30%" />
+            </Link>
         </div>
-        <div className={show ? "navLinks showmenu" : "navLinks"}>
+        <div className={!show ? "navLinks showmenu" : "navLinks"}>
             <div className="links">
                 <Link  to="/">Home</Link>
                 <Link to="/appointment">Appointment</Link>

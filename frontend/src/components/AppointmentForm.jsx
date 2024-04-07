@@ -94,6 +94,8 @@ const AppointmentForm = () => {
     }
   };
 
+  
+
   return (
     <>
       <div className="container form-component appointment-form">

@@ -46,13 +46,11 @@ try {
     }
   });
   toast.success(response.data.message);
-  setIsAuthenticated(true);
+  setIsAuthenticated(true);  
   navigate('/');
-  
 } catch (error) {
   toast.error(error.response.data.message);
   setIsAuthenticated(false);
-  
 }
 
 }
@@ -63,7 +61,8 @@ if(!isAuthenticated) {
   return (
     <section className="page">
    <div className="container form-component add-admin-form">
-    <img src="/logo.png" alt="logo"className='logo' />
+    <img src="/logo1.png" alt="logo"className='logo' width="35%" />
+    <br />
     <h1 className='form-title'>
       Add New Admin
     </h1>
