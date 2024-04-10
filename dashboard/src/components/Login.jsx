@@ -49,7 +49,7 @@ if(isAuthenticated) {
 }
   return (
    <div className="container form-component">
-      <img src="/logo.png" alt="logo" className='logo' />
+      <img src="/logo1.png" alt="logo" className='logo' width="30%" />
       <h1 className="form-title">WELCOME TO BN MEDICAL</h1>
       <p>
         Only Admins are allowed to login
